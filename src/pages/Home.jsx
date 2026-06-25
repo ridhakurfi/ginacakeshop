@@ -4,23 +4,51 @@ import "../styles/home.css";
 function Home() {
     const cakes = [
         {
-            name: "Japanese Cheesecake",
-            price: "Rp 120,000",
+            name: "Strawberry Cheesecake",
+            price: "Rp 200,000",
             image:
-                "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1200",
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345296/Kue%20Gina/Strawberry_Cheesecake_xtdswh.jpg",
         },
         {
-            name: "Chocolate Cake",
-            price: "Rp 135,000",
+            name: "Blueberry Cheesecake",
+            price: "Rp 180,000",
             image:
-                "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200",
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345294/Kue%20Gina/Blueberry_Cheesecake_bitzjw.jpg",
         },
         {
-            name: "Red Velvet Cake",
+            name: "Triple Chocolate Cake",
             price:
-                "Rp 140,000",
+                "Rp 225,000",
             image:
-                "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200",
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345297/Kue%20Gina/Triple_Chocolate_Cake_xwtwyd.jpg",
+        },
+        {
+            name: "Mix Fruit Cake",
+            price:
+                "Rp 325,000",
+            image:
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345294/Kue%20Gina/Mix_Fruit_Cake_k3faiq.jpg",
+        },
+        {
+            name: "Mango Cake",
+            price:
+                "Rp 280,000",
+            image:
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345294/Kue%20Gina/Mango_Cake_f4oo3f.jpg",
+        },
+        {
+            name: "Mocca Nougat Cake",
+            price:
+                "Rp 275,000",
+            image:
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345295/Kue%20Gina/Mocca_Nougat_Cake_u5cbg6.jpg",
+        },
+        {
+            name: "Oreo Strawberry Cheesecake",
+            price:
+                "Rp 255,000",
+            image:
+                "https://res.cloudinary.com/ducjx48tv/image/upload/v1782345296/Kue%20Gina/Oreo_Strawberry_Cheesecake_it5pwx.jpg",
         },
     ];
 
@@ -52,7 +80,7 @@ function Home() {
                         href="https://wa.me/6281371905444"
                         className="order-btn"
                     >
-                        Order Now
+                        Pesan Sekarang
                     </a>
                 </div>
 
@@ -144,13 +172,13 @@ function Home() {
 
             {/* CONTACT */}
             <section className="contact">
-                <h2>Ready to Order?</h2>
+                <h2>Mau memesan segera?</h2>
 
                 <a
                     href="https://wa.me/6281371905444"
                     className="contact-btn"
                 >
-                    Contact Us
+                    Hubungi Kami
                 </a>
             </section>
         </div>
