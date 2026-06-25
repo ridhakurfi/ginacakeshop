@@ -172,7 +172,7 @@ function Home() {
 
             {/* CONTACT */}
             <section className="contact">
-                <h2>Mau memesan segera?</h2>
+                <h2>Mau memesan?</h2>
 
                 <a
                     href="https://wa.me/6281371905444"
