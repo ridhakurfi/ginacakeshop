@@ -80,7 +80,7 @@ function Home() {
                         href="https://wa.me/6281371905444"
                         className="order-btn"
                     >
-                        Pesan Sekarang
+                        Pesan
                     </a>
                 </div>
 
