@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/home.css";
+import CakeShowcase from "../components/netflix";
 
 function Home() {
     const cakes = [
@@ -103,7 +104,7 @@ function Home() {
                     ))}
                 </div>
             </section>
-
+            <CakeShowcase></CakeShowcase>
             {/* TRUST */}
             <section className="stats">
                 <div>🎂 500+ Terjual</div>
