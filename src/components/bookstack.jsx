@@ -105,7 +105,7 @@ export default function Cakes() {
               <p>{selectedCake.price}</p>
 
               <button>
-                Order Now
+                Pesan Sekarang
               </button>
             </div>
 
