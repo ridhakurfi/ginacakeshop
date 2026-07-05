@@ -1,0 +1,205 @@
+.cake-stack{
+
+    background:#f7f2ea;
+    padding:70px 20px;
+
+}
+
+.cake-stack h2{
+
+    text-align:center;
+    margin-bottom:40px;
+
+    font-size:2rem;
+
+}
+
+/* STACK */
+
+.stack{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+/* CARD */
+
+.stack-card{
+
+    height:170px;
+
+    margin-top:-110px;
+
+    border-radius:24px;
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.stack-card:first-child{
+
+    margin-top:0;
+
+}
+
+.stack-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stack-overlay{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:20px;
+
+    color:white;
+
+    font-size:1.1rem;
+    font-weight:600;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.8)
+    );
+
+}
+
+/* MODAL */
+
+.modal-backdrop{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.cake-modal{
+
+    width:min(90%,420px);
+
+    background:white;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    animation:pop .25s ease;
+
+}
+
+@keyframes pop{
+
+from{
+
+transform:scale(.9);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}
+
+.close-btn{
+
+    position:absolute;
+
+    right:12px;
+    top:12px;
+
+    width:38px;
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+}
+
+.cake-modal img{
+
+    width:100%;
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.modal-info{
+
+    padding:24px;
+
+}
+
+.modal-info h3{
+
+    margin:0;
+
+}
+
+.modal-info p{
+
+    margin:12px 0 24px;
+
+    font-size:1.2rem;
+    font-weight:bold;
+
+}
+
+.modal-info button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#b8860b;
+
+    color:white;
+
+    cursor:pointer;
+
+}

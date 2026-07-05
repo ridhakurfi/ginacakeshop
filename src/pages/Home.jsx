@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/home.css";
 import CakeShowcase from "../components/netflix";
+import Cakes from "../components/bookstack";
 
 function Home() {
     const cakes = [
@@ -105,6 +106,7 @@ function Home() {
                 </div>
             </section>
             <CakeShowcase></CakeShowcase>
+            <Cakes></Cakes>
             {/* TRUST */}
             <section className="stats">
                 <div>🎂 500+ Terjual</div>
