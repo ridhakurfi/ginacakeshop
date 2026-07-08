@@ -1,4 +1,4 @@
-.masonry {
+.masonry-grid {
     column-count: 2;
     column-gap: 16px;
     padding: 16px;
@@ -6,12 +6,20 @@
 
 .masonry-card {
     break-inside: avoid;
+
     margin-bottom: 16px;
+
     background: white;
+
     border-radius: 18px;
     overflow: hidden;
+
     cursor: pointer;
-    transition: transform .25s ease, box-shadow .25s ease;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
@@ -20,9 +28,10 @@
     box-shadow: 0 14px 30px rgba(0,0,0,.14);
 }
 
-.masonry-card img {
+.masonry-image {
     width: 100%;
     display: block;
+
     border-radius: 18px 18px 0 0;
 }
 
@@ -30,29 +39,38 @@
     padding: 14px;
 }
 
-.masonry-info h3 {
+.masonry-title {
     margin: 0;
+
     font-size: 1rem;
     line-height: 1.3;
+
     color: #222;
 }
 
-.masonry-info p {
+.masonry-price {
     margin-top: 6px;
+
     color: #777;
     font-weight: 600;
 }
 
 /* Tablet */
+
 @media (min-width: 700px) {
-    .masonry {
+
+    .masonry-grid {
         column-count: 3;
     }
+
 }
 
 /* Desktop */
+
 @media (min-width: 1100px) {
-    .masonry {
+
+    .masonry-grid {
         column-count: 4;
     }
+
 }
