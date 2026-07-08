@@ -2,6 +2,9 @@ import { useState } from "react";
 import "../styles/home.css";
 import CakeShowcase from "../components/netflix";
 import Cakes from "../components/bookstack";
+import Mason from "../components/Mason";
+import Cover from "../components/Cover";
+import Carousel from "../components/Carousel";
 
 function Home() {
     const cakes = [
@@ -54,59 +57,14 @@ function Home() {
         },
     ];
 
-    const [current, setCurrent] = useState(0);
-
-    const nextSlide = () => {
-        setCurrent((prev) => (prev + 1) % cakes.length);
-    };
-
-    const prevSlide = () => {
-        setCurrent((prev) => (prev - 1 + cakes.length) % cakes.length);
-    };
-
     return (
         <div className="home">
             <section className="banner">MADAM GINA'S CAKE SHOP</section>
-            <section className="hero">
-                <img
-                    src={cakes[current].image}
-                    alt={cakes[current].name}
-                    className="hero-image"
-                />
-
-                <div className="hero-overlay">
-                    <h1>{cakes[current].name}</h1>
-                    <p>{cakes[current].price}</p>
-
-                    <a
-                        href="https://wa.me/6281371905444"
-                        className="order-btn"
-                    >
-                        Pesan Sekarang
-                    </a>
-                </div>
-
-                <button className="arrow left" onClick={prevSlide}>
-                    ❮
-                </button>
-
-                <button className="arrow right" onClick={nextSlide}>
-                    ❯
-                </button>
-
-                <div className="dots">
-                    {cakes.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`dot ${current === index ? "active" : ""
-                                }`}
-                            onClick={() => setCurrent(index)}
-                        ></span>
-                    ))}
-                </div>
-            </section>
-            <CakeShowcase></CakeShowcase>
-            <Cakes></Cakes>
+            <Carousel cakes={cakes}></Carousel>
+            <CakeShowcase cakes={cakes}></CakeShowcase>
+            <Cakes cakes={cakes}></Cakes>
+            <Mason cakes={cakes}></Mason>
+            <Cover cakes={cakes}></Cover>
             {/* TRUST */}
             <section className="stats">
                 <div>🎂 500+ Terjual</div>
