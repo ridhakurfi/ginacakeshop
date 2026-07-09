@@ -22,6 +22,7 @@
     max-width: 100%;
 
     height: 340px;
+    overflow: hidden;
 }
 
 .cover-card {
@@ -61,9 +62,9 @@
 
 .cover-card-left {
     transform:
-        translate(-145%, -50%)
-        rotate(-8deg)
-        scale(.88);
+        translate(-90%, -50%)
+        rotate(-6deg)
+        scale(.75);
 
     opacity: .8;
     cursor: pointer;
@@ -73,9 +74,9 @@
 
 .cover-card-right {
     transform:
-        translate(45%, -50%)
-        rotate(8deg)
-        scale(.88);
+        translate(-10%, -50%)
+        rotate(6deg)
+        scale(.75);
 
     opacity: .8;
     cursor: pointer;
@@ -141,9 +142,12 @@
 
 @media (max-width: 768px) {
 
-    .cover-stage {
-        width: 320px;
-        height: 260px;
+    .cover-wrapper{
+        gap:8px;
+    }
+
+    .cover-stage{
+        width:240px;
     }
 
     .cover-card {
